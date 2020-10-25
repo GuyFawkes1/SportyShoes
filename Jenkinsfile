@@ -2,10 +2,10 @@ pipeline {
    agent any
 
    stages {
-      stage('Build') {
+      stage('Deploy') {
         steps {
-          echo 'Building...'
-          sh 'mvn spring-boot:run > /var/lib/jenkins/sportyLog.log &'
+          echo 'Deploying...'
+          sh 'mvn spring-boot:run > /var/lib/jenkins/sportyLog.log'
         }
    }
    }
