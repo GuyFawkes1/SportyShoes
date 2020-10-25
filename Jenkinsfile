@@ -5,7 +5,7 @@ pipeline {
       stage('Build') {
         steps {
           echo 'Building...'
-          sh 'mvn spring-boot:run &'
+          sh 'screen -dm mvn spring-boot:run'
         }
    }
    }
