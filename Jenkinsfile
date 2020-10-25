@@ -5,7 +5,7 @@ pipeline {
       stage('Build') {
         steps {
           echo 'Building...'
-          sh 'screen -dm mvn spring-boot:run'
+          sh 'mvn spring-boot:run >> /home/ubuntu/test.txt'
         }
    }
    }
