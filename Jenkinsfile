@@ -5,7 +5,7 @@ pipeline {
       stage('Build') {
         steps {
           echo 'Building...'
-          sh 'mvn spring-boot:run > /var/lib/jenkins/sportyLog.log'
+          sh 'mvn spring-boot:run > /var/lib/jenkins/sportyLog.log &'
         }
    }
    }
