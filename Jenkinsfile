@@ -5,7 +5,7 @@ pipeline {
       stage('Build') {
         steps {
           echo 'Building...'
-          sh "./mvnw spring-boot:run"
+          sh "sudo ./mvnw spring-boot:run"
         }
    }
    }
